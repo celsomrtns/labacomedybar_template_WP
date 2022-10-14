@@ -1,0 +1,538 @@
+/*!
+Theme Name: Laba Comedy Bar
+Theme URI: http://labacomedybar.com.br/
+Author: Celso Martins
+Author URI: http://celsomartins.com.br/
+Description: Tema desenvolvido com base no Underscores, criado por Celso Martins www.celsomartins.com.br
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: labacomedybar
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+labacomedybar is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+body {
+    background: #202020;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: url("imgs/head-back.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: block;
+}
+
+.topbar {
+    background-color: #895830;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.top-sociais ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-sociais ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.top-sociais ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.topbar img {
+    width: auto;
+    height: 22px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.logo-home img {
+    margin-top: 45px;
+    width: auto;
+    height: 300px;
+}
+
+.logo-home p {
+    margin-top: 50px;
+}
+
+.full-img img {
+    width: 100%;
+    height: auto;
+}
+
+.text-destacado {
+    font-size: 2em;
+    background-color: #fff;
+    color: #000;
+    font-weight: bolder;
+    line-height: 1;
+    box-shadow: 5px 5px #000;
+}
+
+.galicia-home img {
+    margin-top: 120px;
+}
+
+.mic-sombra {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 10;
+}
+
+.cont-fluido {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.eventos {
+    background: rgb(32, 32, 32);
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0) 10%, rgba(32, 32, 32, 1) 40%);
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -300px;
+    padding: 30px 0 30px 80px;
+    z-index: 20;
+}
+
+.eventos h3 {
+    padding: 10px 0;
+    margin-bottom: -30px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.bck-eventos {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 50px 0 50px 30px;
+    width: 2720px;
+    height: 600px;
+}
+
+.full-img-btn-todos {
+    width: 140px !important;
+    margin-right: 0 !important;
+}
+
+.full-img-btn-todos img {
+    width: auto;
+    height: 500px;
+    border: 6px solid transparent !important;
+    box-shadow: none !important;
+    zoom: 1;
+    transition: .2s;
+}
+
+.roll-eventos {
+    overflow-x: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.roll-eventos::-webkit-scrollbar {
+    width: 10px;
+}
+
+.roll-eventos::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.roll-eventos::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.roll-eventos::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.evento {
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.evento-list {
+    margin-bottom: 20px;
+}
+
+.evento img,
+.evento-list img {
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 5px #5c5c5c;
+    zoom: 1;
+    transition: .2s;
+}
+
+.btn-evfinal {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    width: 100px;
+    height: 600px;
+    display: inline-block;
+}
+
+.tres-copos {
+    position: absolute;
+    z-index: -1;
+    top: -150px;
+    right: 4em;
+}
+
+.tres-copos img {
+    width: 300px;
+    height: auto;
+}
+
+.sobre {
+    color: #fff;
+    padding: 80px 0;
+}
+
+.sobre p,
+.sessao-fotos p,
+.cardapio p {
+    font-size: 1.5em;
+}
+
+.sobre h1 {
+    margin-top: 60px;
+    font-weight: bolder;
+}
+
+.sessao-fotos {
+    background-image: url("imgs/logos-bck.jpg");
+    padding: 80px 0;
+}
+
+.sessao-fotos h3,
+.cardapio h3 {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.cardapio {
+    color: #fff;
+    padding: 80px 0;
+}
+
+.cardapio-destaque {
+    text-align: right;
+}
+
+.cardapio-destaque img {
+    width: 70%;
+    height: auto;
+}
+
+.qrcode-cardapio {
+    width: 200px;
+    text-align: center;
+    border: 6px solid black;
+}
+
+.btn-primary {
+    background-color: #e39524;
+    border-color: #e39524;
+}
+
+.btn-primary:hover {
+    background-color: #b97005;
+    border-color: #b97005;
+}
+
+footer {
+    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a,
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-sociais ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sociais ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-sociais ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0 0 15px;
+    font-size: 2em;
+}
+
+.logo-footer {
+    width: auto;
+    height: 100px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+header.site-content {
+    background: none;
+    height: 380px;
+}
+
+.full-img-evento img {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.evento-page {
+    padding-bottom: 80px;
+    z-index: 30;
+    position: relative;
+}
+
+.evento-title {
+    margin-bottom: 20px;
+}
+
+.evento-title h1 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-evento {
+    padding: 40px 50px;
+}
+
+.text-evento p {
+    font-size: .7em;
+}
+
+.laba .eventos {
+    background-color: none;
+    background: #202020;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    margin-top: 0 !important;
+    padding: 30px 0 30px 80px;
+    z-index: 20;
+}
+
+.page-eventos .evento {
+    margin-bottom: 20px;
+}
+
+.laba footer {
+    padding-top: 800px
+}
+
+.menubtn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e39524;
+    color: #fff;
+    z-index: 100;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icone-menu {
+    font-size: 2em;
+    margin: 14px 0 0 16px;
+}
+
+.menuarea {
+    width: 300px;
+    height: auto;
+    padding: 20px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e39524;
+    color: #fff;
+    z-index: 90;
+    transition: .2s;
+    margin-right: -300px;
+    display: none;
+}
+
+.menuon {
+    transition: .2s;
+    margin-right: 0;
+    display: block;
+}
+
+.menuarea ul {
+    list-style: none;
+}
+
+.menuarea ul li {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menuarea ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.celsomartins p,
+.celsomartins small {
+    margin: 0;
+    padding: 0;
+}
+
+.celsomartins img {
+    width: auto;
+    height: 35px;
+    margin-top: 10px;
+    margin: 0;
+}
+
+.wp-block-button {
+    width: 100%;
+}
+
+.wp-block-button__link {
+    width: 100% !important;
+    background-color: #e39524 !important;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1024px) {
+    .text-destacado {
+        font-size: 1.2em;
+    }
+    .logo-home p {
+        margin-top: 15px
+    }
+}
+
+@media(max-width:768px) {
+    .eventos {
+        height: auto;
+    }
+    header.site-content {
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:667px) {
+    .hide-landscape,
+    .topbar {
+        display: none;
+    }
+    .logo-home img {
+        height: 200px;
+    }
+    .hide-xs {
+        display: none;
+    }
+}
+
+@media(max-width:640px) {
+    .hide-xs {
+        display: none;
+    }
+    .logo-home img {
+        height: 200px;
+        margin-top: 10px;
+    }
+    .eventos {
+        padding: 0;
+    }
+    .tres-copos {
+        position: absolute;
+        z-index: -1;
+        top: -100px;
+        right: 1em;
+    }
+    .tres-copos img {
+        width: 150px;
+        height: auto;
+    }
+    .cardapio-destaque {
+        text-align: center;
+    }
+    .bck-eventos {
+        padding: 50px 10px 50px 10px;
+    }
+    .cardapio {
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .text-right {
+        text-align: center;
+    }
+    .footer-sociais ul li a {
+        margin: 15px;
+    }
+    header.site-content {
+        height: 220px;
+        ;
+    }
+    .text-evento {
+        padding: 40px 30px;
+    }
+    .laba .eventos {
+        padding: 0;
+    }
+    .laba footer {
+        padding-top: 700px;
+    }
+    .text-destacado {
+        font-size: 1.8em;
+    }
+}
